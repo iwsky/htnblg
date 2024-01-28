@@ -3,6 +3,8 @@ name: Pull
 on:
   push:
     branches: [ main ]
+  schedule:
+    - cron: '11 * * * *'
 permissions:
   contents: write
 jobs:
